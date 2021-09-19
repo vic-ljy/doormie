@@ -30,7 +30,7 @@ export default function RegistrationScreen({navigation}) {
                 const data = {
                     id: uid,
                     email,
-                    fullName,
+                    name: fullName,
                 };
                 database.ref('NO_GROUP')
                     .child(uid)
